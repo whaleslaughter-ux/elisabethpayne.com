@@ -15,7 +15,7 @@
   --color-text:        #1c1c1c;
   --color-text-muted:  #4a4a4a;
   --color-border:      #c8d8e8;
-  --color-hero-overlay: rgba(15, 35, 60, 0.55);
+  --color-hero-overlay: rgba(15, 35, 60, 0.15);
 
   --font-heading: Arial, Helvetica, sans-serif;
   --font-body:    Arial, Helvetica, sans-serif;
@@ -136,14 +136,14 @@ body {
 
 .vision-label {
   font-family: var(--font-ui);
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--color-blue-light);
   margin-right: 0.25rem;
 }
 
 .vision-btn {
   font-family: var(--font-ui);
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   padding: 0.3rem 0.75rem;
   border: 2px solid transparent;
   border-radius: 100px;
@@ -171,7 +171,7 @@ body {
   align-items: center;
   gap: 0.4rem;
   font-family: var(--font-ui);
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   padding: 0.3rem 0.9rem;
   border: 2px solid #c8dff0;
   border-radius: 100px;
@@ -239,19 +239,19 @@ body {
 .site-title {
   font-family: var(--font-heading);
   font-size: var(--size-h1);
-  color: var(--color-white);
+  color: var(--color-navy);
   line-height: 1.15;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
 }
 .site-title abbr {
   text-decoration: none;
-  border-bottom: 2px dotted rgba(255,255,255,0.5);
+  border-bottom: 2px dotted rgba(26,58,92,0.5);
 }
 
 .site-subtitle {
   font-family: var(--font-heading);
   font-size: var(--size-h3);
-  color: var(--color-blue-light);
+  color: var(--color-navy);
   margin-top: 0.3rem;
   font-style: italic;
 }
@@ -259,7 +259,7 @@ body {
 .site-region {
   font-family: var(--font-ui);
   font-size: var(--size-small);
-  color: rgba(255,255,255,0.85);
+  color: var(--color-navy);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-top: 0.4rem;
@@ -327,7 +327,7 @@ body {
   display: block;
   padding: 0.9rem 1.25rem;
   font-family: var(--font-ui);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--color-navy);
   text-decoration: none;
@@ -438,7 +438,7 @@ body {
   margin-bottom: 0.4rem;
 }
 .services-list p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--color-text-muted);
   line-height: 1.6;
   margin: 0;
