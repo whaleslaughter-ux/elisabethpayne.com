@@ -1,6 +1,20 @@
+
 /* main.js — Elisabeth Payne, COMS */
 
-// ── Vision Profile Toggle ──────────────────────────────────────────
+// ── Fix about grid when no headshot ───────────────────────────────
+const headshot = document.querySelector('.headshot');
+if (headshot) {
+  headshot.addEventListener('error', () => {
+    const photoDiv = headshot.closest('.about-photo');
+    if (photoDiv) photoDiv.style.display = 'none';
+    const grid = document.querySelector('.about-grid');
+    if (grid) grid.style.gridTemplateColumns = '1fr';
+  });
+  // Also check if already broken (cached error)
+  if (!headshot.complete || headshot.naturalWidth === 0) {
+    headshot.dispatchEvent(new Event('error'));
+  }
+}
 const visionBtns = document.querySelectorAll('.vision-btn');
 const savedProfile = localStorage.getItem('visionProfile') || 'standard';
 
