@@ -1,5 +1,8 @@
-
 /* main.js — Elisabeth Payne, COMS */
+
+// ── Auto-updating copyright year ──────────────────────────────────
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ── Fix about grid when no headshot ───────────────────────────────
 const headshot = document.querySelector('.headshot');
